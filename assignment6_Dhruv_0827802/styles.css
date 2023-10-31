@@ -1,0 +1,78 @@
+ 
+/* Base styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: lightblue;
+   /* Mobile: light blue background */
+}
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+.oka{
+    padding: 50px;
+}
+form {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+label, input, textarea, button {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+}
+.radio-group {
+    display: flex;
+    gap: 0.5rem;
+}
+.lable1{
+    font-family: 'Courier New', Courier, monospace;
+}
+/* Mobile styles (default) */
+label, input, textarea, button {
+    width: 100%;
+}
+label{
+    font-size: 1.9em;
+}
+input,textarea{
+    border: 2px solid black;
+    height: 38px;
+}
+/* Tablet and Desktop screen */
+@media (min-width: 601px) {
+    body {
+        background-color: lightgreen;
+       /* Tablet: light green background */
+   }
+    form {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 1rem;
+   }
+    label {
+        text-align: right;
+        padding-right: 1rem;
+        font-size: 1.2em;
+   }
+    input,textarea{
+        width: 70%;
+        height: 10px;
+   }
+    .radio-group, button, input[type="radio"] {
+        grid-column: 2;
+   }
+}
+/* only for Desktop styling */
+@media (min-width: 1025px) {
+    body {
+        background-color: lightpink;
+       /* Desktop: light pink background */
+   }
+}
