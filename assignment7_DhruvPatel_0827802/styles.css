@@ -1,0 +1,114 @@
+/* Base Styles */
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2; 
+  }
+  header {
+  background: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;  
+}
+main{ display: flex;
+  align-items: center;
+  min-height: 100vh;}
+form {
+  margin-top: 30px; 
+}
+
+h1 {
+  margin: 0;
+}
+form {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: linear-gradient(45deg, #f0f0f0, #e0e0e0);
+  box-shadow: 10px 10px 0 0 rgba(0, 0, 0, 0.1);
+}
+
+/* Rest of styles */
+label {
+  font-size: 1.2em;
+}
+
+input,
+textarea {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 8px;
+  font-size: 1em;
+}
+
+/* Error Message */
+.error {
+  color: red;
+  font-size: 0.9em;
+  margin-top: 5px;
+}
+
+/* Mobile styles */
+@media (max-width: 600px) {
+  body {font-size: 18px; 
+      background-color: #ff9999; 
+  }
+
+  form {
+      flex-direction: column;
+  }
+
+  .form-column {
+      width: 100%;
+  }
+
+  label {
+      margin-bottom: 5px; font-size: 1.4em;
+  }
+
+
+  input, textarea { 
+    font-size: 1.2em;
+    padding: 12px;
+  }
+  input,
+  select,
+  textarea {
+      width: 100%;
+  }
+}
+
+/* Tablet/Desktop Styles */
+@media (min-width: 601px) {
+  body {   
+      background-color: #66cc66;
+  }
+
+  form {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .form-row {
+      display: flex;
+      margin-bottom: 10px;
+  }
+
+  .form-row label {
+      width: 30%;
+      text-align: right;
+      padding-right: 20px;
+  }
+
+  .form-row input,
+  .form-row select,
+  .form-row textarea {
+      width: 70%;
+  }  
+
+ 
+}
