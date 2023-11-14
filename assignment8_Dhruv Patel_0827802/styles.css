@@ -1,0 +1,33 @@
+
+.non-selectable {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.bg-purple {
+    background-color: #6a5acd; 
+}
+
+/* Responsive body background colors */
+body {
+    background-color: rgb(216, 184, 147);
+}
+
+@media (min-width: 576px) {
+    body {
+        background-color: #96b970; 
+    }
+}
+
+@media (min-width: 768px) {
+    body {
+        background-color: rgb(110, 142, 171); 
+    }
+}
+
+@media (min-width: 992px) {
+    body {
+        background-color: #d7d7f0; /* Light purple for large desktops */
+    }
+}
