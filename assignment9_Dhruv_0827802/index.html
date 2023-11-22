@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>moviesflix - Your Ultimate Movie Destination</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+   </head>
+<body data-spy="scroll" data-target="#aboutNav" data-offset="20">
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">moviesFlix</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#Home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#Features">Features</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#Pricing">Pricing</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown link
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">hindi</a>
+                    <a class="dropdown-item" href="#">english</a>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Header -->
+<header class="jumbotron jumbotron-fluid bg-danger text-white text-center">
+  <div class="container">
+    <h1 class="display-4">DHRUV</h1>
+    <p class="lead">Explore the world of movies and series like never before!</p>
+  </div>
+</header>
+
+
+
+<!-- Buttons -->
+<div class="d-flex justify-content-center mt-5">
+  <button class="btn btn-primary me-2" onclick="scrollToSection('section1')">Go to Section 1</button>
+  <button class="btn btn-primary" onclick="scrollToSection('section2')">Go to Section 2</button>
+</div>
+
+<!-- Sections -->
+<div id="section1" class="mt-5">
+  <h2>Why moviesflix</h2>
+  <p>our go-to resource for an enormous selection of films and TV shows is moviesflix. With a vast collection of captivating and entertaining books, our library offers everything from exciting action adventures to endearing love dramas. Come explore the world of limitless streaming with us</p>
+</div>
+
+<div id="section2" class="mt-5">
+  <h2>Start today</h2>
+  <p>We offer you the best stories from throughout the world because we are dedicated to quality and diversity in reporting. Only on StreamFlix can you enjoy entertainment like never before in one convenient location.</p>
+</div>
+
+
+<!-- Movies Section -->
+<div class="container">
+  <h2 class="text-center mb-4">Featured Movies & Series</h2>
+  <div class="row">
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="card">
+        <img class="card-img-top" src="movie.jpg" alt="Inception">
+        <div class="card-body">
+          <h4 class="card-title">Inception</h4>
+          <p class="card-text">Join Dom Cobb and his team as they explore the fascinating world of dream manipulation. This mind-bending journey blurs the lines between reality and dreams.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="card">
+        <img class="card-img-top" src="movie-1.jpg" alt="Stranger Things">
+        <div class="card-body">
+          <h4 class="card-title">Stranger Things</h4>
+          <p class="card-text">A thrilling ride through a mysterious and supernatural realm. This series takes you on an unforgettable journey of friendship, love, and otherworldly adventures.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="card">
+        <img class="card-img-top" src="movie.jpg" alt="Parasite">
+        <div class="card-body">
+          <h4 class="card-title">Parasite</h4>
+          <p class="card-text">A gripping tale of class struggle that unfolds in unexpected ways. This masterpiece presents a satirical yet poignant exploration of societal dynamics.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS and jQuery -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+
+<!-- JavaScript  Scrolling -->
+<script>
+function scrollToSection(sectionId) {
+  document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+}
+</script>
+
+</body>
+</html>
